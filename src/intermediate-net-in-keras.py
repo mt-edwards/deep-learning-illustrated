@@ -22,21 +22,22 @@ y_valid = to_categorical(y_valid, n_classes)
 
 # %% Model Specification
 model = Sequential()
-model.add(Dense(64, activation='sigmoid', input_shape=(784,)))
+model.add(Dense(64, activation='relu', input_shape=(784,)))
+model.add(Dense(64, activation='relu'))
 model.add(Dense(10, activation='softmax',))
 
 # %% Model Summary
 model.summary()
 
 # %% Model Compilation
-model.compile(loss='mean_squared_error',
+model.compile(loss='categorical_crossentropy',
               optimizer=SGD(lr=0.01),
               metrics=['accuracy'])
 
 # %% Model Fitting
 model.fit(X_train, y_train,
           batch_size=128,
-          epochs=200,
+          epochs=20,
           verbose=1,
           validation_data=(X_valid, y_valid))
 
