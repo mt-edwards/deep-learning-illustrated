@@ -8,6 +8,8 @@ tensorflow = "*"
 ipykernel = "*"
 matplotlib = "*"
 tflearn = "*"
+scipy = "*"
+numpy = "*"
 
 [dev-packages]
 pylint = "*"
