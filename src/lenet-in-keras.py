@@ -24,10 +24,10 @@ y_valid = to_categorical(y_valid, n_classes)
 # model specification
 model = Sequential()
 
-# first hidden CNN layer
+# first hidden convolution layer
 model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(28, 28, 1)))
 
-# second hidden CNN layer with pooling and dropout
+# second hidden convolution layer with max-pooling and dropout
 model.add(Conv2D(64, kernel_size=(3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
