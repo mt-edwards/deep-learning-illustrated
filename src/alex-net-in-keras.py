@@ -6,7 +6,8 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.layers import BatchNormalization, Dropout
 
 # load data
-X, Y = oxflower17.load_data(one_hot=True)
+X, Y = oxflower17.load_data(one_hot=True,
+                            dirname='data/17flowers')
 
 # model specification
 model = Sequential()
