@@ -1,5 +1,4 @@
 # import dependencies
-import tensorflow
 import tflearn.datasets.oxflower17 as oxflower17
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense

@@ -1,5 +1,4 @@
 # import dependencies
-import tensorflow
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications.vgg19 import VGG19
 from tensorflow.keras.models import Sequential

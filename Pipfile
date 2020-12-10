@@ -10,6 +10,11 @@ matplotlib = "*"
 tflearn = "*"
 scipy = "*"
 numpy = "*"
+nltk = "*"
+gensim = "*"
+sklearn = "*"
+pandas = "*"
+bokeh = "*"
 
 [dev-packages]
 pylint = "*"

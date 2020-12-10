@@ -1,5 +1,4 @@
 # import dependencies
-import tensorflow
 from tensorflow.keras.datasets import boston_housing
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, BatchNormalization, Dropout
